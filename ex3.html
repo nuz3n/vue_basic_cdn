@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <span>ชื่อพนักงาน</span>
+        <input v-model="newData.empName">
+        <span>เงินเดือน</span>
+        <input v-model="newData.salary">
+        <br>
+        <button @click="addEmp">Save</button>
+        <br>
+        <ul>
+            <li v-for="emp in empGroup">
+                {{emp.empName}} เงินเดือน {{emp.salary}}
+            </li>
+        </ul>
+        <h1>จำนวนเงินที่ต้องจ่ายพนักงาน {{summation}}</h1>
+        <h1>ค่าเฉลี่ย {{avg}}</h1>
+    </div>
+    <script src="app_3.js" charset="utf-8"></script>
+</body>
+</html>

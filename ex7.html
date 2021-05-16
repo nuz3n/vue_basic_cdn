@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <food-app>
+            <ul>
+                <li>กะเพราไก่</li>
+            </ul>
+        </food-app>
+        <food-app>
+            <ul>
+                <li>พะแนงเนื้อ</li>
+            </ul>
+        </food-app>
+    </div>
+
+    <template id="foodarea">
+        <div id="food">
+            <h4>เมนูอาหาร</h4>
+            <slot></slot>
+        </div>
+    </template>
+    <script src="app_7.js" charset="utf-8"></script>
+</body>
+</html>
